@@ -78,6 +78,7 @@ export default class JitsiConference {
   grantOwner: ( id: string ) => void;
   revokeOwner: ( id: string ) => void;
   kickParticipant: ( id: string, reason?: string ) => void;
+  endConferenceMeeting(id: any, reason: any): void;
   muteParticipant: ( id: string, mediaType?: MediaType ) => void;
   onMemberJoined: ( jid: string, nick: string, role: string, isHidden: boolean, statsID?: unknown, status?: string, identity?: unknown, botType?: unknown, fullJid?: string, features?: unknown, isReplaceParticipant?: boolean ) => void;
   onMemberLeft: ( jid: string, reason?: string ) => void;

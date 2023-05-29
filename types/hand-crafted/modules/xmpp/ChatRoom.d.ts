@@ -62,4 +62,5 @@ export default class ChatRoom extends Listenable {
   clean: () => void;
   leave: ( reason?: string ) => Promise<unknown>; // TODO:
   end: () => void;
+  endMeeting(id: any, reason?: string): void;
 }
